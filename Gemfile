@@ -40,7 +40,7 @@ gem 'unicorn'
 
 # Custom
 gem 'activeadmin'
-gem 'devise'
+gem 'devise', '3.0.1'
 gem "role_model"
 
 #Grapes

@@ -34,7 +34,7 @@ class Player < ActiveRecord::Base
   end
   
   def self.token_authorize(token)
-    self.find_by_authentication_token(token)
+    self.find_by_authentication_token(token) if token.present?
   end
   
   def self.authenticate_with_email(email, password)
