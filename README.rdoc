@@ -1,5 +1,3 @@
-== Gaminpad
+== Gaminpad Bootstrap
 
-{<img src="https://codeclimate.com/github/Gaminpad/Gaminpad-backend.png" />}[https://codeclimate.com/github/Gaminpad/Gaminpad-backend]
-
-Gaminpad is a Backend as a Service platform for Game developers.
+Bootstrapped Backend API for a Multiplayer Game built in Grape (0.6.0).
