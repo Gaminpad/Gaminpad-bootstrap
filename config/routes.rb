@@ -3,12 +3,10 @@ Gaminpad::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  #match '/' => 'apps#index', :constraints => { :subdomain => /.+/ }, :as => :app_root
-  #match '/api' => 'apps#api_index', :constraints => { :subdomain => /.+/ }, :as => :api_root
+  root :to => 'application#index'
+  match '/api' => 'application#api_index'
   
   mount GaminpadCore::APICore => '/api'
-
-  root :to => 'application#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

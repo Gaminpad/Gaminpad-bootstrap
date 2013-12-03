@@ -4,5 +4,9 @@ class ApplicationController < ActionController::Base
   def index
   	render :file => 'public/landing-app', :layout => false
   end
-
+  
+  def api_index
+  	render :file => 'public/landing-api', :layout => false
+  end
+  
 end
